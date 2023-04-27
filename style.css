@@ -29,4 +29,42 @@ nav a {
     font-family: 'Playfair Display';
     font-weight: 500;
     font-size: 16px;
+    list-style: none;
   }
+
+  .fa {
+    padding: 20px;
+    font-size: 50px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .home {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: url(./assets/hermes-rivera-Ww8eQWjMJWk-unsplash.jpg);
+    background-size: cover;
+    z-index: -1;
+  }
+
+.home-text {
+    position: absolute;
+    width: 610px;
+    height: 300px;
+    left: 15px;
+    top: 266px;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 75px;
+    text-transform: uppercase;
+    
+    color: #161D33; 
+}
