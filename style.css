@@ -1,8 +1,21 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Bangers', cursive;
 }
 
 nav {
-    background-color: #EFAA24;
+    background: rgba(239, 170, 36, 0.3);
+    font-weight: 400;
+    font-size: 24px;
 }
+
+nav a {
+    color: #161D33;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23161D33' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  
+  
