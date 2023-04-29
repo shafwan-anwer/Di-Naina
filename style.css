@@ -53,6 +53,7 @@ nav a {
 
 .About-us {
     width: 100%;
+    position: relative;
     text-align: center;
 }
 
