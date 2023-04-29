@@ -69,7 +69,7 @@ nav a {
 }
 
 .About-us p {
-    left: 80px;
+    left: 100px;
     width: 493px;
     height: 208px;
     padding-top: 150px;    
@@ -84,7 +84,6 @@ nav a {
 }
 
 .About-us img { 
-    position: relative;
     width: 700px;
     height: 466.72px;
     left: 50px;
@@ -93,6 +92,7 @@ nav a {
 }
 
 .Menu h1 {
+    padding-top: 80px;
     padding-bottom: 50px;
     font-family: 'Playfair Display';
     font-style: normal;
@@ -140,7 +140,7 @@ nav a {
 }
 
 .services h1 {
-        padding-bottom: 50px;
+        padding-bottom: 30px;
         font-family: 'Playfair Display';
         font-style: normal;
         font-weight: 600;
