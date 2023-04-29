@@ -4,6 +4,17 @@ body {
     font-family: 'Bangers', cursive;
 }
 
+.container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
 nav {
     background: rgba(239, 170, 36, 0.3);
     font-weight: 400;
@@ -19,8 +30,8 @@ nav a {
   }
   
   footer{
+    margin-top: 3500px;
     background: #D9D9D9;
-    bottom: 0;
   }
 
   footer a { 
@@ -35,7 +46,7 @@ nav a {
   .fa {
     padding: 20px;
     font-size: 50px;
-    width: 30px;
+    width: 50px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
@@ -44,18 +55,16 @@ nav a {
   .home {
     position: absolute;
     width: 100%;
-    height: 100%;
     left: 0px;
     top: 0px;
     background: url(./assets/hermes-rivera-Ww8eQWjMJWk-unsplash.jpg);
     background-size: cover;
+    height: 100vh;
     z-index: -1;
   }
 
 .home-text {
     position: absolute;
-    width: 610px;
-    height: 300px;
     left: 15px;
     top: 266px;
 
@@ -65,6 +74,129 @@ nav a {
     font-size: 56px;
     line-height: 75px;
     text-transform: uppercase;
-    
     color: #161D33; 
 }
+
+.About-us {
+    top: 800px;
+    max-width: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+.About-us h1 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 75px;
+    letter-spacing: 0.1em;
+    color: #161D33;
+}
+
+.About-us p {
+    position: absolute;
+    width: 493px;
+    height: 208px;
+    padding-top: 150px;    
+    font-family: 'Bangers';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: left;
+    letter-spacing: 0.14em;
+    
+    color: #161D33;
+}
+
+.About-us img { 
+    position: absolute;
+    width: 700px;
+    height: 466.72px;
+    left: 653px;
+    background: url(dan-rooney-qm6yxe7SjWg-unsplash.jpg);
+    border-radius: 16px 16px 80px 16px;
+}
+
+.Menu {
+    top: 1600px;
+    position: absolute;
+}
+
+.Menu img {
+    width: 200px;
+    height: 300px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 40px 16px;
+}
+
+.Menu-name {
+    width: 93px;
+    height: 26px;
+    font-family: 'Bangers';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    /* identical to box height */
+    letter-spacing: 0.14em;
+    text-align: center;
+    color: #161D33;
+}
+
+.Menu-name .p {
+
+    word-wrap: break-word;
+    max-width: 116px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #161D33;
+}
+
+.Services {
+    top: 2700px;
+    position: absolute;
+}
+
+.Services img {
+    position: absolute;
+    width: 500px;
+    height: 340px;
+    left: 131px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 24px 24px 56px 24px;
+    }
+
+    .Services h3 {
+   padding-left: 250px;
+    width: 102px;
+    height: 26px;
+    font-family: 'Bangers';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    /* identical to box height */
+    letter-spacing: 0.14em;
+    color: #161D33;
+    }
+
+    .Services p {
+
+        position: absolute;
+        width: 493px;
+        height: 255px;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        
+        color: #161D33;
+    }
