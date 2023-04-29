@@ -53,11 +53,11 @@ nav a {
 
 .About-us {
     width: 100%;
-    position: relative;
     text-align: center;
 }
 
 .About-us h1 {
+    padding-bottom: 50px;
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 600;
@@ -68,7 +68,7 @@ nav a {
 }
 
 .About-us p {
-    position: relative;
+    left: 80px;
     width: 493px;
     height: 208px;
     padding-top: 150px;    
@@ -86,9 +86,20 @@ nav a {
     position: relative;
     width: 700px;
     height: 466.72px;
-    left: 200px;
+    left: 50px;
     background: url(dan-rooney-qm6yxe7SjWg-unsplash.jpg);
     border-radius: 16px 16px 80px 16px;
+}
+
+.Menu h1 {
+    padding-bottom: 50px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 75px;
+    letter-spacing: 0.1em;
+    color: #161D33;
 }
 
 .Menu img {
@@ -127,6 +138,17 @@ nav a {
     color: #161D33;
 }
 
+.services h1 {
+        padding-bottom: 50px;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 75px;
+        letter-spacing: 0.1em;
+        color: #161D33;
+}
+
 .services img {
     width: 500px;
     height: 340px;
@@ -134,8 +156,6 @@ nav a {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 24px 24px 56px 24px;
     }
-
-
 
     .services p {
 
@@ -181,41 +201,44 @@ nav a {
     @media (max-width: 600px) {
 
         .home {
-            background: url(./assets/hermes-rivera-Ww8eQWjMJWk-unsplash.jpg);
+            width: 100%;
+            background: url(./assets/a4b2c1_14456dbc4592446b94d523fcb9f9f787~mv2.jpg.webp);
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            height: 100vh;
+            z-index: -1;
         }
 
         .home-text {
-            width: 300px;
             left: 15px;
-            position: absolute;
+            top: 0;
+            padding-top: 150px;
             font-family: 'Playfair Display';
             font-style: normal;
-            font-weight: 300;
-            font-size: 36px;
+            font-weight: 400;
+            font-size: 46px;
             line-height: 75px;
             text-transform: uppercase;
             color: #161D33; 
         }
 
+        .About-us p {
+            width: 90%;
+            height: auto;
+            padding-top: 50px;    
+            text-align: center;
+        }
+
+        .About-us img { 
+            width: 80%;
+            height: 300px;
+            left: 0;
+            border-radius: 16px 16px 80px 16px;
+        }
+
+
 
       }
 
 
-      @media (max-width: 800px) {
-
-        .home {
-            background: url(./assets/hermes-rivera-Ww8eQWjMJWk-unsplash.jpg);
-        }
-
-        .home-text {
-            left: 15px;
-            top: 80px;
-            font-family: 'Playfair Display';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 36px;
-            line-height: 55px;
-            text-transform: uppercase;
-            color: #161D33; 
-        }
-      }
+    
