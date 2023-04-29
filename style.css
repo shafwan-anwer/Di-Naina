@@ -10,11 +10,6 @@ body {
     padding: 0;
 }
 
-.container-fluid {
-    margin: 0;
-    padding: 0;
-}
-
 nav {
     background: rgba(239, 170, 36, 0.3);
     font-weight: 400;
@@ -30,33 +25,13 @@ nav a {
   }
   
   footer{
-    margin-top: 3500px;
     background: #D9D9D9;
   }
 
-  footer a { 
-    text-decoration: none;
-    color: #161D33;
-    font-family: 'Playfair Display';
-    font-weight: 500;
-    font-size: 16px;
-    list-style: none;
-  }
-
-  .fa {
-    padding: 20px;
-    font-size: 50px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
 
   .home {
-    position: absolute;
+    position: absoute;
     width: 100%;
-    left: 0px;
-    top: 0px;
     background: url(./assets/hermes-rivera-Ww8eQWjMJWk-unsplash.jpg);
     background-size: cover;
     height: 100vh;
@@ -67,7 +42,6 @@ nav a {
     position: absolute;
     left: 15px;
     top: 266px;
-
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 600;
@@ -78,9 +52,8 @@ nav a {
 }
 
 .About-us {
-    top: 800px;
-    max-width: 100%;
-    position: absolute;
+    width: 100%;
+    position: relative;
     text-align: center;
 }
 
@@ -95,7 +68,7 @@ nav a {
 }
 
 .About-us p {
-    position: absolute;
+    position: relative;
     width: 493px;
     height: 208px;
     padding-top: 150px;    
@@ -106,25 +79,20 @@ nav a {
     line-height: 17px;
     text-align: left;
     letter-spacing: 0.14em;
-    
     color: #161D33;
 }
 
 .About-us img { 
-    position: absolute;
+    position: relative;
     width: 700px;
     height: 466.72px;
-    left: 653px;
+    left: 200px;
     background: url(dan-rooney-qm6yxe7SjWg-unsplash.jpg);
     border-radius: 16px 16px 80px 16px;
 }
 
-.Menu {
-    top: 1600px;
-    position: absolute;
-}
-
 .Menu img {
+    padding-left: 10px;
     width: 200px;
     height: 300px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -159,13 +127,7 @@ nav a {
     color: #161D33;
 }
 
-.Services {
-    top: 2700px;
-    position: absolute;
-}
-
-.Services img {
-    position: absolute;
+.services img {
     width: 500px;
     height: 340px;
     left: 131px;
@@ -173,23 +135,10 @@ nav a {
     border-radius: 24px 24px 56px 24px;
     }
 
-    .Services h3 {
-   padding-left: 250px;
-    width: 102px;
-    height: 26px;
-    font-family: 'Bangers';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 26px;
-    /* identical to box height */
-    letter-spacing: 0.14em;
-    color: #161D33;
-    }
 
-    .Services p {
 
-        position: absolute;
+    .services p {
+
         width: 493px;
         height: 255px;
         font-family: 'Playfair Display';
@@ -197,6 +146,76 @@ nav a {
         font-weight: 600;
         font-size: 16px;
         line-height: 21px;
-        
         color: #161D33;
     }
+
+    .footer{
+        background: #D9D9D9;
+        padding: 10px;
+    }
+
+    .footer-content {
+        padding-left: 80px;
+        text-decoration: none;
+        list-style: none;
+        color: #161D33;
+    }
+
+    .footer-content a {
+        text-decoration: none;
+        list-style: none;
+        color: #161D33;
+    }
+
+    .footer-content .fa {
+        font-size: 35px;
+        padding-left: 10px;
+    }
+
+
+
+
+
+    /*media queries*/
+
+    @media (max-width: 600px) {
+
+        .home {
+            background: url(./assets/hermes-rivera-Ww8eQWjMJWk-unsplash.jpg);
+        }
+
+        .home-text {
+            width: 300px;
+            left: 15px;
+            position: absolute;
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 36px;
+            line-height: 75px;
+            text-transform: uppercase;
+            color: #161D33; 
+        }
+
+
+      }
+
+
+      @media (max-width: 800px) {
+
+        .home {
+            background: url(./assets/hermes-rivera-Ww8eQWjMJWk-unsplash.jpg);
+        }
+
+        .home-text {
+            left: 15px;
+            top: 80px;
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 55px;
+            text-transform: uppercase;
+            color: #161D33; 
+        }
+      }
