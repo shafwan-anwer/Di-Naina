@@ -22,11 +22,11 @@ nav a {
 }
 
 .navbar-toggler-icon {
+    z-index: 999;
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23161D33' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
   
   .home {
-    position: absoute;
     max-width: 100%;
     background: url(./assets/hermes-rivera-Ww8eQWjMJWk-unsplash.jpg);
     background-size: cover;
@@ -35,8 +35,7 @@ nav a {
   }
 
 .home-text {
-    position: absolute;
-    left: 15px;
+    padding-left: 5%;
     top: 266px;
     font-family: 'Playfair Display';
     font-style: normal;
@@ -223,7 +222,7 @@ nav a {
         .home-text {
             left: 15px;
             top: 0;
-            padding-top: 150px;
+            padding-top: 120px;
             font-family: 'Playfair Display';
             font-style: normal;
             font-weight: 400;
