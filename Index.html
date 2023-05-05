@@ -27,6 +27,23 @@
                 'opsz' 48,
         }
     </style>
+     <style>
+        .fade-in {
+            animation: fadeInAnimation ease 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+
+
 </head>
 
 <body>
@@ -67,7 +84,7 @@
 
     <!--Home startt-->
     <div class="home container mb-5" id="home">
-        <div class="home-text">
+        <div class="home-text fade-in">
             "WE<br> BRING THE FLAVOUR,<br> YOU<br> BRING THE APPETITE"
         </div>
     </div>
@@ -110,59 +127,59 @@
 
     <div class="Menu container text-center" id="menu">
         <h1 class="mb-5 mt-5">Menu</h1>
-        <div class="row text-center mb-5">
-            <div class="col-12 col-lg-3 col-md-4 text-center">
-                <img src="./assets/Unknown-2" alt="" />
+        <div class="row text-center mb-5" id="pics">
+            <div class="col-12 col-lg-3 col-md-4 text-center pic">
+                <img src="./assets/Unknown-2" alt=""/>
                 <h3 class="Menu-name mx-auto mt-4">BIRIYANI</h3>
                 <div class="p mt-2 mx-auto">
                     Our biryanis come in a range of flavors and styles, from classic chicken and lamb to vegetarian and seafood options.
                 </div>
             </div>
-            <div class="col-12 col-lg-3 col-md-4 text-center">
-                <img src="./assets/Unknown-3" alt="" />
+            <div class="col-12 col-lg-3 col-md-4 text-center pic">
+                <img src="./assets/Unknown-3" alt=""/>
                 <h3 class="Menu-name mx-auto mt-4">NASI GORENG</h3>
                 <div class="p mt-2 mx-auto">
                     Our Nasi Goreng is a classic Indonesian fried rice dish made with fragrant jasmine rice, mixed vegetables, 
                     and a savory blend of spices and sauces.
                 </div>
             </div>
-            <div class="col-12 col-lg-3 col-md-4  text-center">
-                <img src="./assets/Unknown-4" alt="" />
+            <div class="col-12 col-lg-3 col-md-4  text-center pic">
+                <img src="./assets/Unknown-4" alt=""/>
                 <h3 class="Menu-name mx-auto mt-4">FRIED RICE</h3>
                 <div class="p mt-2 mx-auto">
                     Our fried rice come in a range of flavors and styles, from classic chicken and lamb to vegetarian and seafood options.
                 </div>
             </div>
-            <div class="col-12 col-lg-3 col-md-4  text-center">
+            <div class="col-12 col-lg-3 col-md-4  text-center pic">
                 <img src="./assets/Unknown-5" alt="" />
                 <h3 class="Menu-name mx-auto mt-4">KOTHTHU</h3>
                 <div class="p mt-2 mx-auto">
                     Our Koththu is a perfect blend of textures and flavors, with crispy roti and savory fillings.
                 </div>
             </div>
-            <div class="col-12 col-lg-3 col-md-4  text-center">
-                <img src="./assets/Unknown-6" alt="" />
+            <div class="col-12 col-lg-3 col-md-4  text-center pic">
+                <img src="./assets/Unknown-6" alt=""/>
                 <h3 class="Menu-name mx-auto mt-4">CURRY</h3>
                 <div class="p mt-2 mx-auto">
                     Choose from a variety of curries, ranging from mild and creamy to spicy and aromatic, and discover your new favorite dish.
                 </div>
             </div>
-            <div class="col-12 col-lg-3 col-md-4  text-center">
+            <div class="col-12 col-lg-3 col-md-4  text-center pic">
                 <img src="./assets/Unknown-10" alt="" />
                 <h3 class="Menu-name mx-auto mt-4">PAROTA</h3>
                 <div class="p mt-2 mx-auto">
                     Indulge in the authentic taste of South Indian cuisine with our delicious and freshly made Parota.
                 </div>
             </div>
-            <div class="col-12 col-lg-3 col-md-4  text-center">
-                <img src="./assets/Unknown-10" alt="" />
+            <div class="col-12 col-lg-3 col-md-4  text-center pic">
+                <img src="./assets/Unknown-10" alt=""/>
                 <h3 class="Menu-name mx-auto mt-4">CHAPATHI</h3>
                 <div class="p mt-2 mx-auto">
                     Made with high-quality ingredients and cooked to perfection, our chapathis are soft and chewy.
                 </div>
             </div>
-            <div class="col-12 col-lg-3 col-md-4  text-center">
-                <img src="./assets/Unknown-6" alt="" />
+            <div class="col-12 col-lg-3 col-md-4  text-center pic">
+                <img src="./assets/Unknown-6" alt=""/>
                 <h3 class="Menu-name mx-auto mt-4">TEA</h3>
                 <div class="p mt-2 mx-auto">
                     From classic black tea to aromatic herbal blends, our teas are the perfect addition to any meal.
@@ -251,6 +268,29 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript">
+
+        var pics = document.getElementById("pics");
+        var height, half;
+
+        window.addEventListener("resize", adjustHeightVars);
+        window.addEventListener("scroll", fadeBox);
+
+        function fadeBox () {	
+            var x = pics.offsetTop - half;
+            var y = window.pageYOffset;
+            if (y >= x) {
+                $(".pic").addClass("fadein");
+            }
+        }
+
+        function adjustHeightVars() {
+            height = window.innerHeight;
+            half = height * 0.35;
+        }
+
+        adjustHeightVars();
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -261,6 +301,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

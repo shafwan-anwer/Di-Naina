@@ -144,6 +144,56 @@ nav a {
   color: #161d33;
 }
 
+.pic {
+	opacity: 0;
+}
+
+.one {
+	animation-delay: none;
+}
+
+.two {
+	animation-delay: 200ms;
+}
+
+.three {
+	animation-delay: 400ms;
+}
+
+.four {
+	animation-delay: 600ms;
+}
+
+.five {
+	animation-delay: 800ms;
+}
+
+.six {
+	animation-delay: 1000ms;
+}
+
+.fadein {
+	animation-name: fadein;
+	animation-fill-mode: both;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+		transform: translateY(50%);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+
+
 .services {
   max-width: 100%;
 }
@@ -179,7 +229,7 @@ nav a {
 }
 
 .footer {
-  background: #d9d9d9;
+  background: rgba(239, 170, 36, 0.3);
   padding: 10px;
   max-width: 100%;
 }
